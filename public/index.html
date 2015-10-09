@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html data-ng-app="app">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
+        <!-- custom styles -->
+        <link rel="stylesheet" href="development/content/styles/app.css">
+        <link rel="stylesheet" href="development/ext-modules/psFramework/psFramework.css">
+        <link rel="stylesheet" href="development/ext-modules/psMenu/psMenu.css">
+
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+        <script src="bower_components/angular-route/angular-route.min.js"></script>
+
+        <!-- framework services -->
+        <script src="development/ext-modules/services/sharedServices.module.js"></script>
+        <script src="development/ext-modules/services/broadcast.service.js"></script>
+        <script src="development/ext-modules/services/routing.service.js"></script>
+        <script src="development/ext-modules/services/windowEvent.service.js"></script>
+        <script src="development/ext-modules/services/utilities.service.js"></script>
+        <script src="development/ext-modules/services/constants.service.js"></script>
+        <script src="development/ext-modules/services/menuState.service.js"></script>
+
+        <!--  psFramework -->
+        <script src="development/ext-modules/psMenu/psMenu.module.js"></script>
+        <script src="development/ext-modules/psMenu/psMenu.controller.js"></script>
+        <script src="development/ext-modules/psMenu/psMenu.directive.js"></script>
+        <script src="development/ext-modules/psMenu/menuItem/psMenuItem.directive.js"></script>
+        <script src="development/ext-modules/psMenu/menuGroup/psMenuGroup.directive.js"></script>
+
+        <script src="development/ext-modules/psDashboard/psDashboard.module.js"></script>
+        <script src="development/ext-modules/psDashboard/psDashboard.controller.js"></script>
+
+        <script src="development/ext-modules/psFramework/psFramework.module.js"></script>
+        <script src="development/ext-modules/psFramework/psFramework.controller.js"></script>
+        <script src="development/ext-modules/psFramework/psFramework.directive.js"></script>
+
+        <!--  main app -->
+        <script src="development/app/app.module.js"></script>
+        <script src="development/app/app.controller.js"></script>
+        <script src="development/app/app.route.config.js"></script>
+        <script src="development/app/app.config.js"></script>
+        <script src="development/app/directives/wwaDashboard.directive.js"></script>
+        <script src="development/app/directives/wwaGuides.directive.js"></script>
+        <script src="development/app/directives/wwaLocations.directive.js"></script>
+    </head>
+    <body class="container-fluid">
+        <ps-framework
+            title="Whitewater Adventures"
+            subtitle="Administrative Application"
+            icon-file="development/content/images/kayaking.jpg">
+                <ps-menu>
+                    <ps-menu-item label="Dashboard" icon="fa-dashboard" route="dashboard"></ps-menu-item>
+                    <ps-menu-item label="Locations" icon="fa-location-arrow" route="locations"></ps-menu-item>
+                    <ps-menu-item label="Raft Guides" icon="fa-user" route="guides"></ps-menu-item>
+                    <ps-menu-group label="Equipment" icon="fa-gears">
+                        <ps-menu-item label="Rafts" icon="fa-unlink" route="rafts"></ps-menu-item>
+                        <ps-menu-item label="Paddles" icon="fa-magic" route="paddles"></ps-menu-item>
+                        <ps-menu-item label="Life vests" icon="fa-life-ring" route="vests"></ps-menu-item>
+                    </ps-menu-group>
+                </ps-menu>
+        </ps-framework>
+    </body>
+</html>

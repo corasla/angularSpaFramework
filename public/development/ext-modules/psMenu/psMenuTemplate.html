@@ -1,0 +1,13 @@
+<div class="ps-menu-area"
+     data-ng-class="{'ps-menu-area-vertical': vm.menuStateDataObject.isMenuVertical, 'ps-menu-area-horizontal': !vm.menuStateDataObject.isMenuVertical}"
+     data-ng-show="vm.menuStateDataObject.isMenuVisible">
+    <ul class="ps-menu"
+        data-ng-transclude></ul>
+    <a class="btn ps-menu-layout-button"
+       data-ng-show="!vm.menuStateDataObject.menuBlockedVertically"
+       data-ng-class="{'ps-layout-button-horizontal': !vm.menuStateDataObject.isMenuVertical}"
+       data-ng-click="vm.toggleMenuOrientation()">
+        <i class="fa"
+            data-ng-class="{'fa-chevron-up': vm.menuStateDataObject.isMenuVertical, 'fa-chevron-left': !vm.menuStateDataObject.isMenuVertical}"></i>
+    </a>
+</div>

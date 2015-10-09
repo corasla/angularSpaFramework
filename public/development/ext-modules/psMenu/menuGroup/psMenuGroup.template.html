@@ -1,0 +1,17 @@
+<li class="ps-popup-menu-vertical"
+    data-ng-click="clicked()"
+    data-ng-class="{'ps-groupitem-horizontal': !isVertical()}">
+        <span class="ps-noselect">
+            <i class="fa {{icon}} ps-menu-icon"></i>
+                {{label}}
+            <i  class="fa fa-chevron-left ps-group-indicator-left"
+                data-ng-if="isVertical()"
+                data-ng-class="{'fa-rotate-270': isOpen}"></i>
+        </span>
+
+        <div data-ng-show="isOpen"
+             class="ps-subitem-section ps-fade-in-animation"
+             data-ng-class="{'ps-popup-menu': !isVertical()}">
+             <ul data-ng-transclude></ul>
+        </div>
+</li>

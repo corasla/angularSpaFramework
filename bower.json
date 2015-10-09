@@ -1,0 +1,36 @@
+{
+  "name": "spaApp",
+  "version": "1.0.0",
+  "description": "Building a SPA Framework using AngularJS",
+  "main": "",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "angulardemo"
+  ],
+  "authors": [
+    "Rzv"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "~1.4.7",
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4",
+    "font-awesome": "fontawesome#~4.4.0",
+    "angular-animate": "~1.4.7",
+    "angular-gridster": "~0.13.5"
+  },
+  "dependencies": {
+    "angular-route": "~1.4.7"
+  }
+}

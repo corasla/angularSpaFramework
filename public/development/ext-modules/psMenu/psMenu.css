@@ -1,0 +1,145 @@
+/* Menu area */
+.ps-menu-area {
+    position: relative;
+    background-color: #333;
+    color: #ccc;
+    padding-left: 0;
+}
+
+.ps-menu-area-vertical {
+    float: left;
+    width: 200px;
+    min-height: 100vh;
+    padding-top: 30px;
+}
+
+.ps-menu-area-horizontal{
+    width: 100%;
+    height: 40px;
+}
+
+.ps-menu-area ul {
+    padding-left: 0;
+}
+
+/* any nested btn on hover / Menu layout toggle btn color on hover */
+.ps-menu-area .btn:hover{
+    color: #fff;
+}
+
+/* Menu */
+.ps-menu {
+    list-style-type: none;
+    vertical-align: top;
+}
+
+.ps-menu ul {
+    list-style-type: none;
+}
+
+.ps-menu li {
+    line-height: 3em;
+    cursor: pointer;
+}
+
+.ps-menu li div{
+    display: inline-block;
+    width: 90%;
+    padding-left: 16px;
+}
+
+.ps-menu-icon {
+    margin-right: 10px;
+}
+
+/* Selected menu item indicator */
+.ps-menu-active-indicator {
+    float:right;
+    color: #ccc;
+    margin-right: 0;
+    margin-top: 8px;
+}
+
+.ps-selectable-item:hover {
+    background-color: #555;
+}
+
+/* Nested menu */
+/* Nested menu indicator */
+.ps-group-indicator-left{
+    float: right;
+    color: #ddd;
+    margin-right: 2px;
+    margin-top: 15px;
+}
+/*Subitem padding*/
+.ps-subitem-section {
+    position: relative;
+    padding-left: 0;
+}
+.ps-popup-menu {
+    position: absolute;
+    left:0px;
+    top:34px;
+    z-index: 1000;
+    background-color: #333;
+    width: 200px;
+    padding:0;
+}
+.ps-popup-menu-vertical{
+    padding-left: 16px;
+}
+/* Menu layout toggle button */
+.ps-menu-layout-button{
+    margin: 12px;
+    padding: 2px 8px;
+    color: #bbb;
+    background-color: #333;
+    border: 1px solid #999;
+}
+
+/* When menu is horizontal, apply button horizontal style to menu toggle button*/
+.ps-layout-button-horizontal{
+    position: absolute;
+    top: -6px;
+    right: 10px;
+}
+
+/* When menu is horizontal, apply horizontal style to menu buttons(items)*/
+.ps-item-horizontal {
+    display: inline-block;
+    width: 165px !important;
+    margin-top: 5px;
+    line-height: 1.5em !important;
+}
+.ps-groupitem-horizontal {
+    position: relative;
+    display: inline-block;
+    width: 165px !important;
+    margin-top: 5px;
+    line-height: 1.5em !important;
+}
+
+/* Make button text unselectable*/
+.ps-noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.ps-fade-in-animation{
+    -moz-transition: linear all 0.1s;
+    -o-transition: linear all 0.1s;
+    -webkit-transition: linear all 0.1s;
+    transition: linear all 0.1s;
+}
+.ps-fade-in-animation.ng-hide{
+    /*opacity: 0;*/
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    margin-bottom: 0;
+}
